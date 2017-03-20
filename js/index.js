@@ -2,6 +2,9 @@
 
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
+
+		$('.lunchButton').on('click', pressLunchButton);
+		$('.dinnerButton').on('click', pressDinnerButton);
  
 		$('a[href^="#"]').on('click', function (e) {
 			e.preventDefault();
@@ -22,6 +25,22 @@
 			});
 		});
 	});
+
+	function pressLunchButton(event){
+		console.log("Press pressLunchButton");
+		$( "#entrees" ).addClass('hideDinner');
+		$( "#dinnerText" ).removeClass('lundinactive');
+		$( "#lunch" ).removeClass('hideLunch');
+		$( "#lunchText" ).addClass('lundinactive');
+	}
+
+	function pressDinnerButton(event){
+		console.log("Press pressDinnerButton");
+		$( "#lunch" ).addClass('hideLunch');
+		$( "#lunchText" ).removeClass('lundinactive');
+		$( "#entrees" ).removeClass('hideDinner');
+		$( "#dinnerText" ).addClass('lundinactive');
+	}
  
 	function onScroll(event){
 		var scrollPosition = $(document).scrollTop();

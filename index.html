@@ -49,7 +49,7 @@
                         <ul class="nav navbar-nav main-nav clear navbar-right">
                             <li><a href="#top" class="navactive color_animation">WELCOME</a></li>
                             <li><a href="#about" class="color_animation">ABOUT</a></li>
-                            <!--<li><a href="#menu" class="color_animation">GRAND OPENING</a></li>-->
+                            <li><a href="#menu" class="color_animation">MENU</a></li>
                             <li><a href="#contact" class="color_animation">CONTACT</a></li>
                         </ul>
                     </div>
@@ -99,183 +99,347 @@
         </section>
 
         <!-- ============ MENU ============= -->
-        
-                <!--<div class="col-md-6 col-md-offset-3 flyer">-->
-        <!--<section id="menu" class="description_content">
+
+        <section id="menu" class="description_content">
             <div class="text-contect container">
-                <h1 class="col-md-2 col-md-offset-5">Grand Opening</h1>
-                <div class="flyer">
-                    <div class="img-section-space">
-                        <img src="images/flyer.jpg" width="100%">
-                    </div>
+                <div class="col-md-12" style="padding-bottom: 25px;">
+                    <h1 class="col-md-2 col-md-offset-5">Menu</h1>
+                </div>
+                <button id="lunchText" class="btn lunchButton lundin astext color_animation">
+                    Lunch
+                </button>
+                <button id="dinnerText" class="btn dinnerButton lundin astext color_animation lundinactive">
+                    Dinner
+                </button>
+                <div>
+                    <ul id="appetizers">
+                        <div class="col-md-12" style="padding-bottom: 25px;">
+                            <h2 class="col-md-6 col-md-offset-3 topbottomborders title">Appertizers</h2>
+                        </div>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Duck Confit Poutine
+                                        <span class="foodprice">12</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Pulled duck confit, chopped kimchi slaw, duck gravy, melted cheese curds
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Salmon Taro Taco
+                                        <span class="foodprice">10</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Thinly sliced taro taco, diced fresh Atlantic salmon, lime leaf, shaved iceberg, salsa verde, pickled ginger sesame mayo
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Ying yang scallops
+                                        <span class="foodprice">15</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Mammoth scallops 2 ways, coriander dusted seared, red onion gastrique, top of curry butternut squash puree. Citrus ceviche top of avocado puree, chili oil drizzle
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Thai risotto meatball
+                                        <span class="foodprice">9</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Thai infused pork and beef blended meatball, stuffed inside creamy risotto, on a bed of homemade butter chicken sauce
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        BBQ short “riblets”
+                                        <span class="foodprice">16</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Five spiced dusted BBQ short ribs, orange reduction, crispy spun potatoes
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                    
+                    </ul>
+                    <ul id="salad">
+                        <div class="col-md-12" style="padding-bottom: 25px;">
+                            <h2 class="col-md-6 col-md-offset-3 topbottomborders title">Salad</h2>
+                        </div>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Grilled Halloumi Asparagus Salad
+                                        <span class="foodprice">16</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Grilled halloumi, blanched green asparagus bundles, napa cabbage slaw, pickled ginger soy citrus sesame vinaigrette
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Roasted Beet
+                                        <span class="foodprice">14</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Sliced red and yellow beets, candied walnuts, goat cheese, fresh mesclun greens, ponzu poppy seed vinaigrette
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Shaved Heirloom Carrot
+                                        <span class="foodprice">15</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            A mélange of shaved heirloom carrots, tossed with toasted cumin, ginger lemon dressing, roasted pistachio, diced paneer, crispy pappadum
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                    
+                    </ul>
+                    <ul id="lunch" class="hideLunch">
+                        <div class="col-md-12" style="padding-bottom: 25px;">
+                            <h2 class="col-md-6 col-md-offset-3 topbottomborders title">Lunch</h2>
+                        </div>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Open Faced Grilled Vegetable Moroccan Spiced Goat Cheese
+                                        <span class="foodprice">15</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            A medley of fresh grilled vegetables, topped with Moroccan spiced goat cheese, toasted almonds, aged balsamic drizzle
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Chili Chicken Wrap
+                                        <span class="foodprice">16</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Tender morsels of diced chicken, braised fresh vegetables and chickpeas, wrapped with a flour tortilla
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Grilled Korean Beef Baguette
+                                        <span class="foodprice">19</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Homemade Korean barbecue sauce marinated certified angus steak, grilled to medium rare, kimchi spiced fresh slaw, spiced sweet mayo
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Tempura Hamburger
+                                        <span class="foodprice">18</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Seasoned certified angus ground beef patty, lightly  battered, soft brioche bun, sesame ginger soy fresh slaw, wasabi mayo
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Seafood Linguini
+                                        <span class="foodprice">22</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Fresh mussels, tiger shrimps, bay scallops, diced tomatoes, fresh basil, sautéed with extra virgin olive oil, toasted pine nuts
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                   
+                    </ul>
+                    <ul id="entrees" class="">
+                        <div class="col-md-12" style="padding-bottom: 25px;">
+                            <h2 class="col-md-6 col-md-offset-3 topbottomborders title">Entrees</h2>
+                        </div>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Surf and Turf Ravioli
+                                        <span class="foodprice">24</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Crispy ravioli filled with shrimps, scallops, and salmon, paired with slow braised morsels of butter chicken
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Indo Salmon
+                                        <span class="foodprice">26</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Pan-seared fresh Atlantic salmon, simmered with a fragrant Indonesian curry, fancy sweet black rice, sautéed vegetables
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Pomegranate Cashew Chicken
+                                        <span class="foodprice">26</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Cashew stuffed chicken breast, white wine pomegranate chicken stock reduction, taro mashed potato, sautéed vegetables
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Chimichurri Grilled Certified Angus NY Strip loin
+                                        <span class="foodprice">36</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Juicy tender certified angus NY strip loin, homemade chimichurri sauce, red wine demi-glace, stacked potatoes, sautéed vegetables
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                   
+                    </ul>
+                    <ul id="dessert">
+                        <div class="col-md-12" style="padding-bottom: 25px;">
+                            <h2 class="col-md-6 col-md-offset-3 topbottomborders title">Dessert</h2>
+                        </div>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        “Baklava" Chilled Cheesecake
+                                        <span class="foodprice">12</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Crispy phyllo pastry, chopped pistachio, spiced rosewater syrup, layered between creamy chilled matcha cheesecake
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        Grilled Pineapple Upside Down Cake
+                                        <span class="foodprice">12</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Sweet grilled pineapples, buttery sponge cake, toasted almonds, pineapple syrup, vanilla ice cream
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item" data-is-last-item="false">
+                                <div class="titledescription">
+                                    <div class="foodtitle">
+                                        “Pavlova”
+                                        <span class="foodprice">12</span>
+                                    </div>
+                                    <div class="fooditem">
+                                        <span class="fooddescription">
+                                            Light airy baked meringue, sweet coconut custard, mango puree, fresh pomegranate
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                    
+                    </ul>
                 </div>
             </div>
-        </section>-->
-
-        <!--<section id="menu" class="description_content">
-            <div class="text-contect container">
-                <div class="row single_menus">
-                    
-                        <h1 class="col-md-2 col-md-offset-5">Menu</h1>
-                        
-                        <ul id="appetizers">
-                            <h2 class="menu_title ">APPETIZER</h2>
-                            <li class="">
-                                 <div class="food">
-                                    Duck Confit Poutines <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Pulled duck confit, chopped kimchi slaw, duck gravy, melted cheese curds
-                                </div>
-                                
-                            </li>
-                            
-
-                            <li class="">
-                                 <div class="food">
-                                    Salmon Taro Taco <span class="price">$12</span>
-                                 </div>
-                                 <div class="food-desc"> 
-                                    Thinly sliced taro taco, diced fresh Atlantic salmon, lime leaf, shaved iceberg, pickled ginger sesame mayo
-                                </div>
-
-                            </li>
-                            
-
-                            <li class="">
-                                 <div class="food">
-                                    Ying Yang scallops <span class="price">$12</span>
-                                 </div>
-                                 
-                                <div class="food-desc"> 
-                                    Mammoth scallops 2 ways, coriander dusted seared, red onion gastrique, top of curry butternut squash puree. Citrus ceviche on top of avacode puree, chili oil drizzle
-                                </div>
-                            </li>
-                            
-
-                            <li class="">
-                                 <div class="food">
-                                    Thai risotto meatball <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Thai infused pork and beef blended meatballs, stuffed inside creamy risotto, on a bed of homemade butter chicken sauce
-                                </div>
-                            </li>
-                            
-
-                            <li class="">
-                                 <div class="food">
-                                    Five spiced braised short "riblets" <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Five spiced dusted slow braised short ribs, orange reduction, crispy spun potatoes
-                                </div>
-                            </li>
-                        </ul>
-
-                        
-                        <ul id="salad">
-                            <h2 class="menu_title">SALAD</h2>
-                            <li class="salad">
-                                 <div class="food">
-                                    Grilled Halloumi Asparagus Salad <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Sliced red and yellow beets, candied walnuts, goat cheese, fresh mesculin greens, ponzu poppy seed vinaigrette
-                                </div>
-                            </li>                            
-                            <li class="salad">
-                                 <div class="food">
-                                    Roasted Beet <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Sliced red and yellow beets, candied walnuts, goat cheese, fresh mesculin greens, ponzu poppy seed vinaigrette
-                                </div>
-                            </li>
-                            <li class="salad">
-                                 <div class="food">
-                                    Shaved Heirloom Carrot <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    A melange of shaved heirloom carrots, tossed with toasted cumin, ginger lemon dressing, roasted pistachio, diced paneer, crispy poppadum
-                                </div>
-                            </li>
-                        </ul>
-
-                        
-                        <ul id="entrees">
-                            <h2 class="menu_title">ENTREES</h2>
-                            <li class="entrees">
-                                 <div class="food">
-                                    Surf and Turf Ravioli <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Crispy ravioli filled with shrimps, scallops, and salmon, paired with slow braised morsels of butter chicken
-                                </div>                                
-                            </li>
-
-                            <li class="entrees">
-                                 <div class="food">
-                                    Indo Salmon <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Pan-seared fresh Atlantic salmon, simmered with a fragrant Indonesian curry, fancy sweet black rice, sauteed vegetables
-                                </div>
-                            </li>
-
-                            <li class="entrees">
-                                 <div class="food">
-                                    Pomegranate Cashew Chicken <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Cashew crusted chicken breast, white wine pomegranate chicken stock reduction, taro mashed potato, sauteed vegetables
-                                </div>
-                            </li>
-
-                            <li class="entrees">
-                                 <div class="food">
-                                    Chimichurri Grilled NY Striploin <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Juicy tender NY Striploin, homemade chimichurri sauce, red wine demi-glace, stack potatoes, sauteed vegetables
-                                </div>
-                            </li>
-                        </ul>
-
-                        
-                        <ul id="desserts">
-                            <h2 class="menu_title">DESSERTS</h2>
-                            <li class="desserts">
-                                 <div class="food">
-                                    "Baklava" Chilled Cheesecake <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Crispy phyllo pastry, chopped pistachio, spiced rosewater syrup, layered between creamy chilled matcha cheesecakes
-                                </div>
-                            </li>
-
-                            <li class="desserts">
-                                 <div class="food">
-                                    Grilled Pineapple Upside Down Cake <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Sweet grilled pineapples, buttery sponge cake, toasted almonds, pineapple syrup, and vanilla ice cream
-                                </div>
-                            </li>
-
-                            <li class="desserts">
-                                 <div class="food">
-                                    Pavlova <span class="price">$12</span>
-                                 </div>
-                                <div class="food-desc"> 
-                                    Light airy baked maringue, sweet coconut custard, mango puree, fresh pomegranate
-                                </div>
-                            </li>
-                        </ul>
-
-                </div>
-            </div>
-        </section>-->
+        </section>
 
         <!-- ============ Social Section  ============= -->
       
