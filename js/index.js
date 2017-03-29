@@ -3,6 +3,7 @@
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
 
+		$('.brunchButton').on('click', pressBrunchButton);
 		$('.lunchButton').on('click', pressLunchButton);
 		$('.dinnerButton').on('click', pressDinnerButton);
  
@@ -26,18 +27,39 @@
 		});
 	});
 
+	function pressBrunchButton(event){
+		console.log("Press pressBrunchButton");
+		$( "#brunchMenu" ).removeClass('hideBrunch');
+		$( "#brunchText" ).addClass('lundinactive');
+
+		$( "#linner" ).addClass('hideBrunch');
+
+		$( "#dinnerText" ).removeClass('lundinactive');
+		$( "#lunchText" ).removeClass('lundinactive');
+	}
+
 	function pressLunchButton(event){
 		console.log("Press pressLunchButton");
+		$( "#linner" ).removeClass('hideBrunch');
 		$( "#entrees" ).addClass('hideDinner');
 		$( "#dinnerText" ).removeClass('lundinactive');
+
 		$( "#lunch" ).removeClass('hideLunch');
 		$( "#lunchText" ).addClass('lundinactive');
+
+		$( "#brunchMenu" ).addClass('hideBrunch');
+		$( "#brunchText" ).removeClass('lundinactive');
 	}
 
 	function pressDinnerButton(event){
 		console.log("Press pressDinnerButton");
+		$( "#linner" ).removeClass('hideBrunch');
 		$( "#lunch" ).addClass('hideLunch');
 		$( "#lunchText" ).removeClass('lundinactive');
+
+		$( "#brunchMenu" ).addClass('hideBrunch');
+		$( "#brunchText" ).removeClass('lundinactive');
+		
 		$( "#entrees" ).removeClass('hideDinner');
 		$( "#dinnerText" ).addClass('lundinactive');
 	}

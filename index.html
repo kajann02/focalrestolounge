@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="row">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-lists">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -105,13 +105,23 @@
                 <div class="col-md-12" style="padding-bottom: 25px;">
                     <h1 class="col-md-2 col-md-offset-5">Menu</h1>
                 </div>
-                <button id="lunchText" class="btn lunchButton lundin astext color_animation">
-                    Lunch
-                </button>
-                <button id="dinnerText" class="btn dinnerButton lundin astext color_animation lundinactive">
-                    Dinner
-                </button>
-                <div>
+                <div id="menuButtons">
+                    <button id="brunchText" class="btn brunchButton lundin astext color_animation">
+                        Brunch
+                    </button>
+                    <button id="lunchText" class="btn lunchButton lundin astext color_animation">
+                        Lunch
+                    </button>
+                    <button id="dinnerText" class="btn dinnerButton lundin astext color_animation lundinactive">
+                        Dinner
+                    </button>
+                </div>
+                <div id="brunchMenu" class="hideBrunch">
+                    <div class="col-md-12" style="padding-bottom: 25px;">
+                            <h2 class="col-md-6 col-md-offset-3 topbottomborders title">Brunch Coming Soon!!</h2>
+                        </div>
+                </div>
+                <div id="linner">
                     <ul id="appetizers">
                         <div class="col-md-12" style="padding-bottom: 25px;">
                             <h2 class="col-md-6 col-md-offset-3 topbottomborders title">Appetizers</h2>
@@ -150,12 +160,12 @@
                             <div class="item" data-is-last-item="false">
                                 <div class="titledescription">
                                     <div class="foodtitle">
-                                        Ying yang scallops
+                                        Yin-Yang scallops
                                         <span class="foodprice">15</span>
                                     </div>
                                     <div class="fooditem">
                                         <span class="fooddescription">
-                                            Mammoth scallops 2 ways, coriander dusted seared, red onion gastrique, top of curry butternut squash puree. Citrus ceviche top of avocado puree, chili oil drizzle
+                                            Mammoth scallops 2 ways, coriander dusted seared, red onion gastrique, top of curry butternut squash puree, citrus ceviche top of avocado puree, chili oil drizzle
                                         </span>
                                     </div>
                                 </div>

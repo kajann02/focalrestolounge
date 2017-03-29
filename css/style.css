@@ -201,11 +201,13 @@ h1, h2, p, span, a {
 NAVBAR
 =========================*/
 div#navbar-collapse-lists {
-    height: 368px;
+    /*height: 50px;*/
     overflow: hidden;
     text-align: center;
     text-decoration: none !important;
+    /*background:#dddddd;*/
 }
+.navbar-collapse { background:#000000; }
 .navbar-brand{
     font-family: 'Pacifico', cursive;
     font-size: 34px !important;
@@ -300,7 +302,7 @@ INTRO CONTAINER
     padding: 0;
     min-width: 100%;
     height: 100%;
-    background: url('../images/focalbg.jpg') no-repeat center center;
+    background: url('../images/bwbg.jpg') no-repeat center center;
     background-size: cover;
     text-align: center;
     background-position: center;  
@@ -324,9 +326,6 @@ INTRO CONTAINER
     font-family: 'Abril Fatface', cursive;
     font-size: 80px;
     font-weight: 400;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black;
  }
 .second-title {
     /*font-weight: lighter; */
@@ -588,6 +587,9 @@ div .menu_title {
     color: rgb(173, 169, 160);
 }
 .lundin:focus {outline:0;}
+#menuButtons {
+    text-align: center;
+}
 .astext {
     background:none;
     border:none;
@@ -595,13 +597,22 @@ div .menu_title {
     padding:0;
     padding: 10px 15px;
 }
+.brunchButton {
+    padding-left: 6%;
+    padding-right: 5%;
+    margin-bottom: 10px;
+}
 .lunchButton {
+    padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 10px;
 }
 .dinnerButton {
     padding-left: 5%;
     margin-bottom: 10px;
+}
+.hideBrunch {
+    display: none;
 }
 .hideLunch {
     display: none;
