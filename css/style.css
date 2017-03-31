@@ -294,6 +294,20 @@ nav {
     border: 5px solid #6D903C;
 }
 
+/*
+Gluten Free
+*/
+.glutenFree {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 2px solid #a1a1a1;
+  font-size: 0.5000em;
+  color: rgb(117, 111, 99);
+}
+
 /*========================
 INTRO CONTAINER
 =========================*/
@@ -364,6 +378,10 @@ h1 {
     display: inline-block;
     padding: 7px 16px;
     margin: 0;
+}
+.description_content ul {
+    padding-left: 0px;
+
 }
 
 /*========================
@@ -550,10 +568,15 @@ div .menu_title {
     font-style: normal!important;
 }
 .titledescription {
-    margin-left: 15px;
+    /*margin-left: 15px;*/
     position: relative;
 }
+.menutitle {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 .foodtitle {
+    padding-top: 12px;
     padding-right: 0%;
     font: normal normal normal 20px/1.5em avenir-lt-w01_35-light1475496;
     color: rgb(117, 111, 99);
@@ -622,6 +645,26 @@ div .menu_title {
 }
 .lundinactive {
     color: #d42b3e !important;
+}
+.menufooter {    
+    margin-top: 30px;
+
+}
+.footerdesc {
+    color: rgb(117, 111, 99);
+    font-size: 12px;
+    text-decoration: underline;
+}
+.footergf {
+    color: rgb(117, 111, 99);
+    font-size: 12px;
+}
+.footergf span{
+    font-size: 10px;
+}
+.footerv {
+    color: rgb(117, 111, 99);
+    font-size: 12px;
 }
 /*========================
 Social Connect
