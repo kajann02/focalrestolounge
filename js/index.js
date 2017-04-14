@@ -29,13 +29,15 @@
 
 	function pressBrunchButton(event){
 		console.log("Press pressBrunchButton");
+		$( "#linner" ).addClass('hideBrunch');
+		$( "#entrees" ).addClass('hideDinner');
+		$( "#dinnerText" ).addClass('lundinactive');
+
+		$( "#lunch" ).addClass('hideLunch');
+		$( "#lunchText" ).removeClass('lundinactive');
+
 		$( "#brunchMenu" ).removeClass('hideBrunch');
 		$( "#brunchText" ).addClass('lundinactive');
-
-		$( "#linner" ).addClass('hideBrunch');
-
-		$( "#dinnerText" ).removeClass('lundinactive');
-		$( "#lunchText" ).removeClass('lundinactive');
 	}
 
 	function pressLunchButton(event){
